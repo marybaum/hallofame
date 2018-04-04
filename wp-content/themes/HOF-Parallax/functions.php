@@ -34,8 +34,10 @@ function parallax_enqueue_scripts_styles() {
 	wp_enqueue_style( 'dashicons' );
 
 	wp_register_style( 'hof_dionisio', get_stylesheet_directory_uri() . '/fonts/Dionisio2017/dionisio-seventeen.css' , 'array()' , '2' );
+	wp_register_style( hof_baskerville, get_stylesheet_directory_uri() . 'fonts/baskerville/baskerville.css' , array() , '2');
 
 	wp_enqueue_style( 'hof_dionisio');
+	wp_enqueue_style( 'hof_baskerville');
 }
 
 //* Add HTML5 markup structure
